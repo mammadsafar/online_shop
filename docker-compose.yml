@@ -7,9 +7,9 @@ services:
     volumes:
       - .:/code
     ports:
-      - 8009:8000
-    depends_on:
-      - db
+    #   - 8009:8000
+    # depends_on:
+    #   - db
     environment:
       - "DJANGO_SECRET_KEY=lkawrsfawerFAEWRfqwerakljfn23423142134123werqQWER"
       - "DJANGO_DEBUG=True"
@@ -19,7 +19,7 @@ services:
     #   - "DJANGO_DEBUG=${DOCKER_COMPOSE_DJANGO_DEBUG}"
     #   - "DJANGO_ZARINPAL_MERCHANT_ID=${DOCKER_COMPOSE_DJANGO_ZARINPAL_MERCHANT_ID}"
 
-  db:
-    image: postgres:14
-    environment:
-      - "POSTGRES_HOST_AUTH_METHOD=trust"
+  # db:
+  #   image: postgres:14
+  #   environment:
+  #     - "POSTGRES_HOST_AUTH_METHOD=trust"
