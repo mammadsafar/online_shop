@@ -107,9 +107,9 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
+        'NAME': 'postgresql',
+        'USER': 'postgresql',
+        'PASSWORD': 'postgresql',
         'HOST': 'test-storedb-hrloo4',
         'PORT': 5432
         # 'ENGINE': 'django.db.backends.sqlite3',
